@@ -7,17 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <title>Main</title>
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo.svg" alt="logo" width="44" height="38">
-        <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
-        <button type="button"><img src="./img/burger.svg" alt="burger" width="32" height="23"></button>
-        <a href="#"><img src="./img/profile.svg" alt="registration" width="29" height="29"></a>
-        <a href="#"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
-        <nav>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+            <div class="header__controls"></div>
+            <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+            <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
+        </div>
+        <div class="header__controls">
+            <button class="header__button">
+            <img src="./img/burger.svg" alt="burger" width="32" height="23"></button>
+            </button>
+            <a class="header_profile-link" href="#"><img src="./img/profile.svg" alt="registration" width="29" height="29"></a>
+            <a href="#"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
+        </div>
+        </div>   
+    </div>
+        <nav class="header__navigation">
             <h2>menu</h2>
             <ul>
                 <li>
@@ -57,29 +69,31 @@
     </header>
 
     <main>
-        <section>
+        <section class="brand">
             <img src="./img/man.jpg" alt="man" width="800" height="765">
-            <h1>the brand of luxerious fashion</h1>
+            <div class="brand__title-wrapper">
+                <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span class="brand_subtitle brand__subtitle--pink">fashion</span></span></h1>
+            </div>
         </section>
-        <section>
-            <h2>Stocks</h2>
-            <ul>
-                <li>
+        <section class="offers container">
+            <h2 class="visually-hidden">Offers</h2>
+            <ul class="offers__list">
+                <li class="offers__item offers__item--woman">
                     <a href="#"></a>
                     <p>30% off</p>
                     <p>for women</p>
                 </li>
-                <li>
+                <li class="offers__item offers__item--man">
                     <a href="#"></a>
                     <p>hot deal</p>
                     <p>for men</p>
                 </li>
-                <li>
+                <li class="offers__item offers__item--kids">
                     <a href="#"></a>
                     <p>new arrivals</p>
                     <p>for kids</p>
                 </li>
-                <li>
+                <li class="offers__item offers__item--accessories">
                     <a href="#"></a>
                     <p>luxerious & trendy</p>
                     <hp>accessories</p>
