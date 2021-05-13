@@ -92,7 +92,7 @@
 .offers__list {
     justify-content: space-between;
     display: flex;
-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .offers__item {
@@ -123,3 +123,17 @@ flex-wrap: wrap;
     width: 100%;
     margin: 0;
 }
+
+.offers__item-text {
+    
+
+}
+
+.offers__item-heading {
+    
+}
+
+.products {
+
+}
+
